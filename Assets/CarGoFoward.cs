@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PathCreation;
 
 public class CarGoFoward : MonoBehaviour
 {
-
-    public GameObject car;
-    public Rigidbody rb;
-    public float Speed;
+    public PathCreator pathCreator;
+    public float speed = 5;
+    float distancetravelled;
 
 
 
@@ -20,7 +20,8 @@ public class CarGoFoward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //rb.velocity = transform.forward * Speed * Time.deltaTime;
-        rb.AddForce(transform.forward * Speed);
+        distancetravelled += speed * Time.deltaTime;
+        transform.position = pathCreator.path.GetPointAtDistance(distancetravelled);
+        transform.rotation = pathCreator.path.GetRotationAtDistance(distancetravelled);
     }
 }
