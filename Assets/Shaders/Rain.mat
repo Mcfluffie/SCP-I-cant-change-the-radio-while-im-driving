@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1399673083663562743
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -8,8 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Rain
-  m_Shader: {fileID: -6465566751694194690, guid: 7c5cbe7af74b2b646b5917ab1662ae8d,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 65b2474bfce8657438190a1cb1caf3ae, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -52,12 +64,20 @@ Material:
         m_Texture: {fileID: 8400000, guid: 0c5c8f89c8b2bd34eb8a2f8da3cd25e0, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GatherTexture2D_fac30a23b72b411fa113e7253fef1d3f_Texture_1:
+        m_Texture: {fileID: 8400000, guid: 0c5c8f89c8b2bd34eb8a2f8da3cd25e0, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalFromTexture_bc7e120e0b714d46a4ae59850d6fd081_Texture_0:
+        m_Texture: {fileID: 8400000, guid: 0c5c8f89c8b2bd34eb8a2f8da3cd25e0, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalFromTexture_c04f033e242e4f899695a742f2c3fe05_Texture_0:
@@ -90,7 +110,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Alpha: 0
     - _AlphaClip: 0
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -108,8 +131,8 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _NoiseScale: 3
-    - _NoiseStrength: 0.01
-    - _NormalStrength: 10
+    - _NoiseStrength: 47
+    - _NormalStrength: 14.2
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -124,7 +147,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _Alpha: {r: 0, g: 0, b: 0, a: 0}
+    - _Alpha: {r: 0, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
