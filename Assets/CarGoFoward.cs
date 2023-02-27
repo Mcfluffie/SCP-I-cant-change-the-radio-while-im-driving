@@ -24,4 +24,5 @@ public class CarGoFoward : MonoBehaviour
         transform.position = pathCreator.path.GetPointAtDistance(distancetravelled);
         transform.rotation = pathCreator.path.GetRotationAtDistance(distancetravelled);
     }
+
 }
