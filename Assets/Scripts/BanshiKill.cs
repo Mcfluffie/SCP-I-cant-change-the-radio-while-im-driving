@@ -18,6 +18,7 @@ public class BanshiKill : MonoBehaviour
             if (hit.collider.gameObject == objectToDestroy)
             {
                 Destroy(objectToDestroy);
+                
             }
         }
     }
