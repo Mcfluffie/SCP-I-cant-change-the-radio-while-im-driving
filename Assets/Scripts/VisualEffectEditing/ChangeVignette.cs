@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ChangeVignette : MonoBehaviour
 {
     
     public Volume globalVolume;
+    public Shader redWoodLands;
 
     [Range(0f, 1f)]
     public float strength;
@@ -19,6 +21,11 @@ public class ChangeVignette : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (xr controller button b is used, use below code)
+        //{
+            //add x amount to the strength of each variable in this script to allow maddness increase
+        //}
+
         // the volume profile of the post processing is name is profile (feels a bit redundant but needs to stay for the project prototype)
         VolumeProfile profile = globalVolume.sharedProfile;
 

@@ -3,7 +3,9 @@ guid: a968a1d38ea7de542bbf2d9a59a688f9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - globalVolume: {instanceID: 0}
+  - redWoodLands: {fileID: -6465566751694194690, guid: 9ff61ed995a7b6f45893c344a340e5a2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
