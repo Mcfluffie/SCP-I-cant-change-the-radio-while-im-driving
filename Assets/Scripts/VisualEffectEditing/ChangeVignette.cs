@@ -21,6 +21,15 @@ public class ChangeVignette : MonoBehaviour
 
     private void Start()
     {
+        
+
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // create a list of input devices and find the one with specific characteristics 
         List<InputDevice> devices = new List<InputDevice>();
         InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
         InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
@@ -32,37 +41,34 @@ public class ChangeVignette : MonoBehaviour
         {
             targetDevice = devices[0];
         }
-
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        // find amungst the flaming ruins the controller set in the variables'primary button if it has it and give the bool of that primary button
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
         if (primaryButtonValue)
+        {
             Debug.Log("pressing the button");
+        }
+            
 
-        //VolumeProfile profile = globalVolume.sharedProfile;
+        VolumeProfile profile = globalVolume.sharedProfile;
 
 
-        //UnityEngine.Rendering.VolumeProfile volumeProfile = GetComponent<UnityEngine.Rendering.Volume>()?.profile;
-        //if (!volumeProfile) throw new System.NullReferenceException(nameof(UnityEngine.Rendering.VolumeProfile));
+        UnityEngine.Rendering.VolumeProfile volumeProfile = GetComponent<UnityEngine.Rendering.Volume>()?.profile;
+        if (!volumeProfile) throw new System.NullReferenceException(nameof(UnityEngine.Rendering.VolumeProfile));
 
-        //UnityEngine.Rendering.Universal.Vignette vignette;
+        UnityEngine.Rendering.Universal.Vignette vignette;
 
-        //if (!volumeProfile.TryGet(out vignette)) throw new System.NullReferenceException(nameof(vignette));
+        if (!volumeProfile.TryGet(out vignette)) throw new System.NullReferenceException(nameof(vignette));
 
-        //vignette.intensity.Override(strength);
+        vignette.intensity.Override(strength);
 
-        //// get the specific part of the unity engine rendering to access the colour adjustments override in the post processing volume
-        //UnityEngine.Rendering.Universal.ColorAdjustments colourAdj;
+        // get the specific part of the unity engine rendering to access the colour adjustments override in the post processing volume
+        UnityEngine.Rendering.Universal.ColorAdjustments colourAdj;
 
-        //// if volume profile is null try and find one via the unity engine code stated above
-        //// then attempt to create an exeption (throw exepetion) so it can find the correct variable required since URP doesn't like post processing
-        //if (!volumeProfile.TryGet(out colourAdj)) throw new System.NullReferenceException(nameof(colourAdj));
+        // if volume profile is null try and find one via the unity engine code stated above
+        // then attempt to create an exeption (throw exepetion) so it can find the correct variable required since URP doesn't like post processing
+        if (!volumeProfile.TryGet(out colourAdj)) throw new System.NullReferenceException(nameof(colourAdj));
 
-        //colourAdj.saturation.Override(saturation);
+        colourAdj.saturation.Override(saturation);
 
 
 
