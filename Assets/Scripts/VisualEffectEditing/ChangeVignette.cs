@@ -46,6 +46,8 @@ public class ChangeVignette : MonoBehaviour
         if (primaryButtonValue)
         {
             Debug.Log("pressing the button");
+            // to be added changing the variables in the shaders and vignette to create the sanity thing
+            // which will later be replaced by a script which has a custom amount you can add to the sanity meter which you can put on your entiries
         }
             
 
