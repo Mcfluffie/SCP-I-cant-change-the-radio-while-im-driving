@@ -57,8 +57,12 @@ public class ChangeVignette : MonoBehaviour
         {
 
             Debug.Log("pressing the button");
-            redWoodLands.SetFloat("Saturation", shaderSaturation);
-            redWoodLands.SetFloat("ColourRange", shaderBloodiness);
+            redWoodLands.SetFloat("Saturation", shaderSaturation + 0.1f);
+            redWoodLands.SetFloat("ColourRange", shaderBloodiness + 0.1f);
+
+            strength += 0.1f;
+            saturation += 0.1f;
+
 
 
         }

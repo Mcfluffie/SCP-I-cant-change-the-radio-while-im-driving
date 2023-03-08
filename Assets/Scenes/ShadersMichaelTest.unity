@@ -11951,8 +11951,8 @@ MonoBehaviour:
   redWoodLands: {fileID: 2100000, guid: 45794d1135a96d64697f09e53f79b28a, type: 2}
   strength: 0
   saturation: 0
-  shaderSaturation: 0.619
-  shaderBloodiness: 0.63
+  shaderSaturation: 0
+  shaderBloodiness: 0
 --- !u!1 &907657105
 GameObject:
   m_ObjectHideFlags: 0
