@@ -16,6 +16,10 @@ public class ChangeVignette : MonoBehaviour
     [Range (-100f, 100f)]
     public float saturation;
 
+    public float shaderSaturation;
+    public float shaderBloodiness;
+
+    
 
     private InputDevice targetDevice;
 
@@ -29,6 +33,9 @@ public class ChangeVignette : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
         // create a list of input devices and find the one with specific characteristics 
         List<InputDevice> devices = new List<InputDevice>();
         InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
@@ -45,9 +52,12 @@ public class ChangeVignette : MonoBehaviour
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
         if (primaryButtonValue)
         {
+
             Debug.Log("pressing the button");
-            // to be added changing the variables in the shaders and vignette to create the sanity thing
-            // which will later be replaced by a script which has a custom amount you can add to the sanity meter which you can put on your entiries
+            Shader.SetGlobalFloat("Saturation", +0.1f);
+            Shader.SetGlobalFloat("ColourRange", +0.1f);
+
+
         }
             
 
