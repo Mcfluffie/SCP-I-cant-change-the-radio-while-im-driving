@@ -8,7 +8,7 @@ public class ChangeVignette : MonoBehaviour
 {
     
     public Volume globalVolume;
-    public Shader redWoodLands;
+    public Material redWoodLands;
 
     [Range(0f, 1f)]
     public float strength;
@@ -16,7 +16,10 @@ public class ChangeVignette : MonoBehaviour
     [Range (-100f, 100f)]
     public float saturation;
 
+    [Range (0f, 1f)]
     public float shaderSaturation;
+
+    [Range(0f, 1f)]
     public float shaderBloodiness;
 
     
@@ -54,8 +57,8 @@ public class ChangeVignette : MonoBehaviour
         {
 
             Debug.Log("pressing the button");
-            Shader.SetGlobalFloat("Saturation", +0.1f);
-            Shader.SetGlobalFloat("ColourRange", +0.1f);
+            redWoodLands.SetFloat("Saturation", shaderSaturation);
+            redWoodLands.SetFloat("ColourRange", shaderBloodiness);
 
 
         }
@@ -83,6 +86,11 @@ public class ChangeVignette : MonoBehaviour
         colourAdj.saturation.Override(saturation);
 
 
+
+    }
+
+    public void ChangeVignetteStrength()
+    {
 
     }
 

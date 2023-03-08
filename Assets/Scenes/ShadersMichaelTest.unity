@@ -11948,11 +11948,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globalVolume: {fileID: 832575518}
-  redWoodLands: {fileID: -6465566751694194690, guid: 9ff61ed995a7b6f45893c344a340e5a2, type: 3}
+  redWoodLands: {fileID: 2100000, guid: 45794d1135a96d64697f09e53f79b28a, type: 2}
   strength: 0
   saturation: 0
-  shaderSaturation: 0
-  shaderBloodiness: 0
+  shaderSaturation: 0.619
+  shaderBloodiness: 0.63
 --- !u!1 &907657105
 GameObject:
   m_ObjectHideFlags: 0
