@@ -7,6 +7,9 @@ TagManager:
   - Wheel
   - LeftTrigger
   - RightTrigger
+  - PST
+  - NST
+  - Controller
   layers:
   - Default
   - TransparentFX
