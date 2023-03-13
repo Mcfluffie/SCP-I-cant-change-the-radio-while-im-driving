@@ -18,7 +18,7 @@ public class RadioController : FiniteStateMachine
     [Tooltip("The list of audio clips for radio static when changing stations.")]
     [SerializeField] private AudioClip[] toggleClips;
     [Tooltip("The list of radio stations.")]
-    [SerializeField] private RadioStation[] stations;
+    [SerializeField] public RadioStation[] stations;
     [Tooltip("The index of the radio station that the game will begin with.")]
     [SerializeField] private int startStation = 0;
 
