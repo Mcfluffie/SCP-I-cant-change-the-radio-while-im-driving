@@ -10,6 +10,7 @@ TagManager:
   - PST
   - NST
   - Controller
+  - RadioTrigger
   layers:
   - Default
   - TransparentFX

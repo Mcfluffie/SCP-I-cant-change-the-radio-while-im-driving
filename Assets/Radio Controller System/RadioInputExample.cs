@@ -9,8 +9,8 @@ using UnityEngine.Events;
 /// </summary>
 public class RadioInputExample : MonoBehaviour
 {
-    public RadioController controller; //radio controller reference
-  
+    private RadioController controller; //radio controller reference
+    private bool triggerEntered = false;
 
     /// <summary>
     /// Awake is called before Start.
@@ -18,6 +18,15 @@ public class RadioInputExample : MonoBehaviour
     private void Awake()
     {
         TryGetComponent(out controller);    //find radio controller script attached to this object
+
+        if (TryGetComponent(out controller))
+        {
+            Debug.Log("RadioController found");
+        }
+        else
+        {
+            Debug.Log("RadioController not found");
+        }
     }
 
     /// <summary>
@@ -26,24 +35,22 @@ public class RadioInputExample : MonoBehaviour
     void Update()
     {
 
-       // if (controller != null)
-       // {
-            /// <summary>
-            /// All you need to do is modify the CurrentStationIndex property in an instance of the radio controller.
-            /// Provided that the controller is setup correctly and this script is on the same object, it should all work.
-            /// In this example you change the radio station by using the mouse scroll wheel.
-            /// </summary>
-            // #region EXAMPLE INPUTS (mouse scroll wheel)
-            //   if (Input.GetAxis("Mouse ScrollWheel") > 0)
-            //  {
-            //    controller.CurrentStationIndex += 1;
-            // }
-            //  else if (Input.GetAxis("Mouse ScrollWheel") < 0)
-            //  {
-            //      controller.CurrentStationIndex -= 1;
-            //   }
-            //  #endregion 
-       // }
+        if (controller != null && triggerEntered)
+        {
+            Debug.Log("NEXT");
+            controller.CurrentStationIndex += 1;
+            triggerEntered = false;
+        }
     }
+    public void OnTriggerEnter(Collider other)
+    {
 
+        Debug.Log("OnTriggerEnter");
+
+        if (controller != null && other.CompareTag("RadioTrigger"))
+        {
+            Debug.Log("NEXT");
+            controller.CurrentStationIndex += 1;
+        }
+    }
 }
