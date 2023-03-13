@@ -8,7 +8,6 @@ public class ChangeVignette : MonoBehaviour
 {
     
     public Volume globalVolume;
-    public Material redWoodLands;
 
     [Range(0f, 1f)]
     public float strength;
@@ -16,11 +15,6 @@ public class ChangeVignette : MonoBehaviour
     [Range (-100f, 100f)]
     public float saturation;
 
-    [Range (0f, 1f)]
-    public float shaderSaturation;
-
-    [Range(0f, 1f)]
-    public float shaderBloodiness;
 
     
 
@@ -53,19 +47,32 @@ public class ChangeVignette : MonoBehaviour
         }
         // find amungst the flaming ruins the controller set in the variables'primary button if it has it and give the bool of that primary button
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
+
         if (primaryButtonValue)
         {
-
-            Debug.Log("pressing the button");
-            redWoodLands.SetFloat("Saturation", shaderSaturation + 0.1f);
-            redWoodLands.SetFloat("ColourRange", shaderBloodiness + 0.1f);
-
-            strength += 0.1f;
-            saturation += 0.1f;
-
-
-
+            ChangeVignetteStrength();
         }
+
+//#if UNITY_EDITOR
+
+//        if (primaryButtonValue)
+//#else
+//            if (primaryButtonValue)
+//#endif
+//        {
+
+//            Debug.Log("pressing the button");
+            
+//            redWoodLands.SetFloat("_Saturation", shaderSaturation + 0.1f);
+//            redWoodLands.SetFloat("_ColourRange", shaderBloodiness + 0.1f);
+
+
+//            strength += 0.1f;
+//            saturation += 0.1f;
+
+
+
+//        }
             
 
         VolumeProfile profile = globalVolume.sharedProfile;
@@ -95,7 +102,23 @@ public class ChangeVignette : MonoBehaviour
 
     public void ChangeVignetteStrength()
     {
+        Debug.Log("pressing the button");
 
+        Shader.SetGlobalFloat(Shader.PropertyToID("_Bloodiness"), strength);
+        
+
+
+        strength += 0.1f;
+    }
+
+    private void OnDisable()
+    {
+        Shader.SetGlobalFloat(Shader.PropertyToID("_Bloodiness"), 0);
+    }
+
+    private void OnEnable()
+    {
+        Shader.SetGlobalFloat(Shader.PropertyToID("_Bloodiness"), 0);
     }
 
 
