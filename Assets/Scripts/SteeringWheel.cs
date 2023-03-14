@@ -76,6 +76,6 @@ public class SteeringWheel : XRBaseInteractable
     private float FindRotationSensitivity()
     {
         // Use a smaller rotation sensitivity with two hands
-        return 0.1f / interactorsSelecting.Count;
+        return 0.05f / interactorsSelecting.Count;
     }
 }
