@@ -15,8 +15,9 @@ public class ChangeVignette : MonoBehaviour
     [Range (-100f, 100f)]
     public float saturation;
 
+    public float strengthIncrease;
 
-    
+    public float lerpTime;
 
     private InputDevice targetDevice;
 
@@ -105,10 +106,12 @@ public class ChangeVignette : MonoBehaviour
         Debug.Log("pressing the button");
 
         Shader.SetGlobalFloat(Shader.PropertyToID("_Bloodiness"), strength);
+
+
+
+        //strength += 0.1f;
         
-
-
-        strength += 0.1f;
+        strength = Mathf.Lerp(strength, strength + strengthIncrease, lerpTime * Time.deltaTime);
     }
 
     private void OnDisable()
