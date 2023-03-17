@@ -11949,8 +11949,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globalVolume: {fileID: 832575518}
-  strength: 0
+  strength: 0.2
   saturation: 64
+  strengthIncrease: 0.9
+  lerpTime: 0.7
+  sanityBar: 0
 --- !u!114 &832575521
 MonoBehaviour:
   m_ObjectHideFlags: 0
