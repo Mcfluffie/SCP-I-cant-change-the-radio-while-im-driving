@@ -11,6 +11,7 @@ public class RadioInputExample : MonoBehaviour
 {
     private RadioController controller; //radio controller reference
     private bool triggerEntered = false;
+    public bool InvertradioDirection = false;
 
     /// <summary>
     /// Awake is called before Start.
@@ -38,7 +39,15 @@ public class RadioInputExample : MonoBehaviour
         if (controller != null && triggerEntered)
         {
             Debug.Log("NEXT");
-            controller.CurrentStationIndex += 1;
+            if (InvertradioDirection == false)
+            {
+                controller.CurrentStationIndex += 1;
+            }
+            else
+            {
+                controller.CurrentStationIndex -= 1;
+            }
+           
             triggerEntered = false;
         }
     }
@@ -50,7 +59,14 @@ public class RadioInputExample : MonoBehaviour
         if (controller != null && other.CompareTag("RadioTrigger"))
         {
             Debug.Log("NEXT");
-            controller.CurrentStationIndex += 1;
+            if (InvertradioDirection == false)
+            {
+                controller.CurrentStationIndex += 1;
+            }
+            else
+            {
+                controller.CurrentStationIndex -= 1;
+            }
         }
 
 
