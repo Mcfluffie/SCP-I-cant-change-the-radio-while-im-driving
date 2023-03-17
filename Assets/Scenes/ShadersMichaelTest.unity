@@ -11951,7 +11951,7 @@ MonoBehaviour:
   globalVolume: {fileID: 832575518}
   strength: 0.2
   saturation: 64
-  strengthIncrease: 0.9
+  timer: 0
   lerpTime: 0.7
   sanityBar: 0
 --- !u!114 &832575521

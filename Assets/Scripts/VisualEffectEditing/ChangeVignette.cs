@@ -18,22 +18,14 @@ public class ChangeVignette : MonoBehaviour
     private float currentStrength;
     private float strengthToReach;
 
-    public float timer;
     public float lerpTime;
-
+    private bool sanityRes;
+    public float timer;
 
     private InputDevice targetDevice;
 
     [Range (0, 100f)]
     public float sanityBar;
-
-
-    private void Start()
-    {
-
-        
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -62,26 +54,6 @@ public class ChangeVignette : MonoBehaviour
             
         }
 
-//#if UNITY_EDITOR
-
-//        if (primaryButtonValue)
-//#else
-//            if (primaryButtonValue)
-//#endif
-//        {
-
-//            Debug.Log("pressing the button");
-            
-//            redWoodLands.SetFloat("_Saturation", shaderSaturation + 0.1f);
-//            redWoodLands.SetFloat("_ColourRange", shaderBloodiness + 0.1f);
-
-
-//            strength += 0.1f;
-//            saturation += 0.1f;
-
-
-
-//        }
             
 
         VolumeProfile profile = globalVolume.sharedProfile;
@@ -112,7 +84,7 @@ public class ChangeVignette : MonoBehaviour
     public void InsanityIncrease()
     {
         // below will be based off of the scripts running to make 
-        sanityBar += 15f;
+        sanityBar += 20f;
         SanityMeter();
         strengthToReach = currentStrength + 1f;
         ChangeVignetteStrength();
@@ -164,9 +136,11 @@ public class ChangeVignette : MonoBehaviour
 
         currentStrength = strength;
 
+        StopCoroutine(SanityRestored(0.5f));
+        
         // starts the coroutine and give it the timer it will take in seconds
         StartCoroutine(LerpingVignette(2));
-
+        StartCoroutine(SanityRestored(5f));
         
 
         //strengthToReach += strengthIncrease
@@ -177,20 +151,60 @@ public class ChangeVignette : MonoBehaviour
 
     IEnumerator LerpingVignette(float time)
     {
+        
+
         float i = 0;
         float rate = 1 / time;
 
         while(i <= 1f)
         {
-            Debug.Log(i);
-            Debug.Log(currentStrength);
             strength = Mathf.Lerp(currentStrength, currentStrength + 0.2f, i);
             Shader.SetGlobalFloat(Shader.PropertyToID("_Bloodiness"), strength);
+            saturation -= 0.1f;
             i += Time.deltaTime * rate;
             yield return 0;
+            
 
         }
     }
+
+    public void SanityHieghtened()
+    {
+       
+        sanityRes = true;
+        StartCoroutine(SanityRestored(5f));
+            
+
+        
+    }
+
+    // resotres sanity
+    IEnumerator SanityReturning()
+    {
+        while(sanityRes == true)
+        {
+
+        }
+    }
+
+    // counts down the time for when sanity can be restored after it is lessened
+    IEnumerator SanityRestored(float time)
+    {
+        float i = 0;
+        float rate = 1 / time;
+        while(i >= 5f)
+        {
+            Debug.Log("testing shit");
+            i += Time.deltaTime * rate;
+            if (i >= 4.9f)
+            {
+                sanityRes = true;
+            }
+            yield return null;
+        }
+    }
+
+
 
     private void OnDisable()
     {
