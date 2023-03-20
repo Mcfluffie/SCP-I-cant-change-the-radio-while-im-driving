@@ -11895,6 +11895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832575519}
   - component: {fileID: 832575518}
+  - component: {fileID: 832575522}
   - component: {fileID: 832575521}
   m_Layer: 0
   m_Name: Global Volume
@@ -12029,6 +12030,23 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &832575522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832575517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a968a1d38ea7de542bbf2d9a59a688f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalVolume: {fileID: 832575518}
+  strength: 0.2
+  saturation: 30
+  sanityCoroutineOn: 0
+  sanityBar: 0
 --- !u!1 &907657105
 GameObject:
   m_ObjectHideFlags: 0

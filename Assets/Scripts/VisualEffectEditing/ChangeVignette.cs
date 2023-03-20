@@ -18,9 +18,7 @@ public class ChangeVignette : MonoBehaviour
     private float currentStrength;
     private float strengthToReach;
 
-    public float lerpTime;
-    private bool sanityRes;
-    public float timer;
+    public bool sanityCoroutineOn;
 
     private InputDevice targetDevice;
 
@@ -47,13 +45,14 @@ public class ChangeVignette : MonoBehaviour
         // find amungst the flaming ruins the controller set in the variables'primary button if it has it and give the bool of that primary button
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
 
-        if (primaryButtonValue || Input.GetKeyDown(KeyCode.K))
+        if (primaryButtonValue || Input.GetKeyDown(KeyCode.Space))
         {
             InsanityIncrease();
 
             
         }
 
+        StartFadeBack();
             
 
         VolumeProfile profile = globalVolume.sharedProfile;
@@ -77,15 +76,14 @@ public class ChangeVignette : MonoBehaviour
 
         colourAdj.saturation.Override(saturation);
 
-       
-        
+        Debug.Log(sanityCoroutineOn);
+
     }
 
     public void InsanityIncrease()
     {
         // below will be based off of the scripts running to make 
         sanityBar += 20f;
-        SanityMeter();
         strengthToReach = currentStrength + 1f;
         ChangeVignetteStrength();
         
@@ -135,12 +133,9 @@ public class ChangeVignette : MonoBehaviour
         Debug.Log("pressing the button");
 
         currentStrength = strength;
-
-        StopCoroutine(SanityRestored(0.5f));
         
         // starts the coroutine and give it the timer it will take in seconds
         StartCoroutine(LerpingVignette(2));
-        StartCoroutine(SanityRestored(5f));
         
 
         //strengthToReach += strengthIncrease
@@ -151,57 +146,56 @@ public class ChangeVignette : MonoBehaviour
 
     IEnumerator LerpingVignette(float time)
     {
-        
+        // lerps the current strength of the vignette and shader to the new version.
 
         float i = 0;
         float rate = 1 / time;
 
         while(i <= 1f)
         {
+            sanityCoroutineOn = true;
+            // the B variable in the Mathf.Lerp will become currentStrength + entityStrengthValue
             strength = Mathf.Lerp(currentStrength, currentStrength + 0.2f, i);
             Shader.SetGlobalFloat(Shader.PropertyToID("_Bloodiness"), strength);
             saturation -= 0.1f;
             i += Time.deltaTime * rate;
+
             yield return 0;
-            
 
         }
-    }
-
-    public void SanityHieghtened()
-    {
-       
-        sanityRes = true;
-        StartCoroutine(SanityRestored(5f));
-            
-
         
+
+        sanityCoroutineOn = false;
     }
 
-    // resotres sanity
-    IEnumerator SanityReturning()
+    public void StartFadeBack()
     {
-        while(sanityRes == true)
+        if(sanityCoroutineOn == false)
         {
-
+            StartCoroutine(VignetteFadeBack(10));
         }
     }
 
-    // counts down the time for when sanity can be restored after it is lessened
-    IEnumerator SanityRestored(float time)
+    IEnumerator VignetteFadeBack(float time)
     {
         float i = 0;
         float rate = 1 / time;
-        while(i >= 5f)
+
+        // take the profile from the beginning and start to lerp over 1 minute to get back to the original sanity
+        while (i <= 10f)
         {
-            Debug.Log("testing shit");
+
+            Debug.Log("the fade back isnt working");
+
+            strength = Mathf.Lerp(currentStrength, 0.2f, i);
+            Shader.SetGlobalFloat(Shader.PropertyToID("_Bloodiness"), strength);
             i += Time.deltaTime * rate;
-            if (i >= 4.9f)
-            {
-                sanityRes = true;
-            }
-            yield return null;
+
+            yield return 0;
+
         }
+
+
     }
 
 
