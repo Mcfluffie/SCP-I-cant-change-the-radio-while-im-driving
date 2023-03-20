@@ -12,6 +12,7 @@ TagManager:
   - Controller
   - RadioTrigger
   - RadioBackwardTrigger
+  - FMOD
   layers:
   - Default
   - TransparentFX
