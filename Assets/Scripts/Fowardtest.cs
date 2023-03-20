@@ -43,7 +43,9 @@ public class Fowardtest : MonoBehaviour
         rb.AddForce(Vector3.forward * speed * Time.deltaTime);
 
         // Calculate the direction of the car based on the rotation of the steering wheel
+        float maxMagnitude = 2.0f; // maximum magnitude for carDirection
         Vector3 carDirection = Quaternion.Euler(0, steeringWheel.rotation.eulerAngles.y, 0) * Vector3.forward;
+        carDirection = Vector3.ClampMagnitude(carDirection, maxMagnitude);
 
         // Apply the direction to the rigidbody of the car
         rb.velocity = carDirection * speed;

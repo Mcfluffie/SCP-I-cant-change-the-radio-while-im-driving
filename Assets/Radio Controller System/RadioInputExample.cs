@@ -54,7 +54,7 @@ public class RadioInputExample : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log("OnTriggerEnter");
+        
 
         if (controller != null && other.CompareTag("RadioTrigger"))
         {
@@ -63,8 +63,9 @@ public class RadioInputExample : MonoBehaviour
             {
                 controller.CurrentStationIndex += 1;
             }
-            else
+            else 
             {
+                Debug.Log("perious");
                 controller.CurrentStationIndex -= 1;
             }
         }
