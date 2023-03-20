@@ -153,6 +153,7 @@ public class ChangeVignette : MonoBehaviour
 
         while(i <= 1f)
         {
+            // THIS NEEDS A CURVE AFFECTING THE LERP PROCESS SO IT HAS A SMOOTHER FINISH
             sanityCoroutineOn = true;
             // the B variable in the Mathf.Lerp will become currentStrength + entityStrengthValue
             strength = Mathf.Lerp(currentStrength, currentStrength + 0.2f, i);
