@@ -1,5 +1,301 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8749654433803642775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ghosts.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ghosts.bank
+  Name: ghosts
+  StudioPath: bank:/ghosts
+  lastModified: 638149248961829569
+  FileSizes:
+  - Name: Desktop
+    Value: 1848
+  Exists: 1
+--- !u!114 &-8633431857628226938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ambience/forest_soundfield
+  m_EditorClassIdentifier: 
+  Path: event:/ambience/forest_soundfield
+  Guid:
+    Data1: -518547926
+    Data2: 1074562047
+    Data3: -1932685933
+    Data4: -1661636410
+  Banks:
+  - {fileID: -3374604070504376301}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 96024
+--- !u!114 &-8215941421228474339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/car/car_winder
+  m_EditorClassIdentifier: 
+  Path: event:/car/car_winder
+  Guid:
+    Data1: 2131395646
+    Data2: 1269263899
+    Data3: 1392036285
+    Data4: -785020452
+  Banks:
+  - {fileID: 841026312373545472}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8214521033917703403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ui/confirm
+  m_EditorClassIdentifier: 
+  Path: event:/ui/confirm
+  Guid:
+    Data1: 736314848
+    Data2: 1096338601
+    Data3: 1984602503
+    Data4: -834699104
+  Banks:
+  - {fileID: -8163643545068146039}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8181418107562353297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/channel_1
+  m_EditorClassIdentifier: 
+  Path: event:/radio/channel_1
+  Guid:
+    Data1: 1031606946
+    Data2: 1328408375
+    Data3: 1552535982
+    Data4: 318982967
+  Banks:
+  - {fileID: 7680649013268609485}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8163643545068146039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ui.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ui.bank
+  Name: ui
+  StudioPath: bank:/ui
+  lastModified: 638149248962370040
+  FileSizes:
+  - Name: Desktop
+    Value: 2494
+  Exists: 1
+--- !u!114 &-7868848014337033441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/radio_button
+  m_EditorClassIdentifier: 
+  Path: event:/radio/radio_button
+  Guid:
+    Data1: -1184202448
+    Data2: 1200043713
+    Data3: -1181261683
+    Data4: 856258356
+  Banks:
+  - {fileID: 7680649013268609485}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5806602671530064707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/hud/sanity_whispers
+  m_EditorClassIdentifier: 
+  Path: event:/hud/sanity_whispers
+  Guid:
+    Data1: -1211480340
+    Data2: 1174782799
+    Data3: 153099649
+    Data4: 1815904629
+  Banks:
+  - {fileID: 7245280719547228877}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4612602628203884740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638149248938534604
+  FileSizes:
+  - Name: Desktop
+    Value: 1178
+  Exists: 1
+--- !u!114 &-4008508981929076427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ambience/rain_soundfield
+  m_EditorClassIdentifier: 
+  Path: event:/ambience/rain_soundfield
+  Guid:
+    Data1: -1964074746
+    Data2: 1195628983
+    Data3: -270104684
+    Data4: -1428141791
+  Banks:
+  - {fileID: -3374604070504376301}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3374604070504376301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ambience.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
+  Name: ambience
+  StudioPath: bank:/ambience
+  lastModified: 638149248955223907
+  FileSizes:
+  - Name: Desktop
+    Value: 1666048
+  Exists: 1
+--- !u!114 &-2847631638040140824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ui/decline
+  m_EditorClassIdentifier: 
+  Path: event:/ui/decline
+  Guid:
+    Data1: 675058831
+    Data2: 1201984736
+    Data3: 522804902
+    Data4: -591960612
+  Banks:
+  - {fileID: -8163643545068146039}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +308,472 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: 7423751942248493530}
+  - {fileID: -3374604070504376301}
+  - {fileID: 841026312373545472}
+  - {fileID: -8749654433803642775}
+  - {fileID: 7245280719547228877}
+  - {fileID: -4612602628203884740}
+  - {fileID: 7680649013268609485}
+  - {fileID: -8163643545068146039}
+  EditorEvents:
+  - {fileID: -4008508981929076427}
+  - {fileID: -8633431857628226938}
+  - {fileID: 5865102623588867742}
+  - {fileID: -8215941421228474339}
+  - {fileID: 6970972958139544747}
+  - {fileID: 7756702860963008292}
+  - {fileID: 3069128927160140673}
+  - {fileID: 5553340401374892493}
+  - {fileID: 8171637178370495814}
+  - {fileID: 4593357342533987064}
+  - {fileID: -5806602671530064707}
+  - {fileID: 338945387263494772}
+  - {fileID: 7108397795962813687}
+  - {fileID: 2248769217444427756}
+  - {fileID: -7868848014337033441}
+  - {fileID: 4857216144388623447}
+  - {fileID: -8181418107562353297}
+  - {fileID: 355588820558451858}
+  - {fileID: -2847631638040140824}
+  - {fileID: -8214521033917703403}
+  - {fileID: 6405893344592413285}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: -4612602628203884740}
+  StringsBanks:
+  - {fileID: 7423751942248493530}
+  cacheTime: 638149248962370040
   cacheVersion: 131601
+--- !u!114 &338945387263494772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/radio_dial
+  m_EditorClassIdentifier: 
+  Path: event:/radio/radio_dial
+  Guid:
+    Data1: -563698169
+    Data2: 1299258936
+    Data3: -932778312
+    Data4: 976171005
+  Banks:
+  - {fileID: 7680649013268609485}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &355588820558451858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/radio_static
+  m_EditorClassIdentifier: 
+  Path: event:/radio/radio_static
+  Guid:
+    Data1: -1032843579
+    Data2: 1321540023
+    Data3: 352768946
+    Data4: 1230381298
+  Banks:
+  - {fileID: 7680649013268609485}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1018
+--- !u!114 &841026312373545472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/car.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank
+  Name: car
+  StudioPath: bank:/car
+  lastModified: 638149248961794541
+  FileSizes:
+  - Name: Desktop
+    Value: 454080
+  Exists: 1
+--- !u!114 &2248769217444427756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/channel_ghost
+  m_EditorClassIdentifier: 
+  Path: event:/radio/channel_ghost
+  Guid:
+    Data1: 2097265703
+    Data2: 1074048670
+    Data3: -494964316
+    Data4: 406977130
+  Banks:
+  - {fileID: 7680649013268609485}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3069128927160140673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ghosts/ghost_vanish
+  m_EditorClassIdentifier: 
+  Path: event:/ghosts/ghost_vanish
+  Guid:
+    Data1: -1660024500
+    Data2: 1283349368
+    Data3: -438616404
+    Data4: 1432924315
+  Banks:
+  - {fileID: -8749654433803642775}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4593357342533987064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/hud/sanity_muffle
+  m_EditorClassIdentifier: 
+  Path: event:/hud/sanity_muffle
+  Guid:
+    Data1: 68857801
+    Data2: 1338857177
+    Data3: 1695723965
+    Data4: 156278640
+  Banks:
+  - {fileID: 7245280719547228877}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4857216144388623447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/channel_3
+  m_EditorClassIdentifier: 
+  Path: event:/radio/channel_3
+  Guid:
+    Data1: -1485382311
+    Data2: 1141403692
+    Data3: -2125631090
+    Data4: 2009103724
+  Banks:
+  - {fileID: 7680649013268609485}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5553340401374892493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ghosts/ghost_spotted
+  m_EditorClassIdentifier: 
+  Path: event:/ghosts/ghost_spotted
+  Guid:
+    Data1: -914111660
+    Data2: 1200226272
+    Data3: -749118814
+    Data4: 1669632696
+  Banks:
+  - {fileID: -8749654433803642775}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5865102623588867742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/car/car_engine
+  m_EditorClassIdentifier: 
+  Path: event:/car/car_engine
+  Guid:
+    Data1: -1646419651
+    Data2: 1101303327
+    Data3: -1770668927
+    Data4: -440538852
+  Banks:
+  - {fileID: 841026312373545472}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
+--- !u!114 &6405893344592413285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ui/cursor
+  m_EditorClassIdentifier: 
+  Path: event:/ui/cursor
+  Guid:
+    Data1: 1178297312
+    Data2: 1113854730
+    Data3: -266304875
+    Data4: -949330152
+  Banks:
+  - {fileID: -8163643545068146039}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6970972958139544747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/car/car_window
+  m_EditorClassIdentifier: 
+  Path: event:/car/car_window
+  Guid:
+    Data1: 1014251719
+    Data2: 1127362493
+    Data3: -128936048
+    Data4: -447426424
+  Banks:
+  - {fileID: 841026312373545472}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4800
+--- !u!114 &7108397795962813687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/channel_2
+  m_EditorClassIdentifier: 
+  Path: event:/radio/channel_2
+  Guid:
+    Data1: 631724299
+    Data2: 1110300999
+    Data3: -671110747
+    Data4: 271652293
+  Banks:
+  - {fileID: 7680649013268609485}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7245280719547228877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/hud.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/hud.bank
+  Name: hud
+  StudioPath: bank:/hud
+  lastModified: 638149248961849591
+  FileSizes:
+  - Name: Desktop
+    Value: 2494
+  Exists: 1
+--- !u!114 &7423751942248493530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638149248938549615
+  FileSizes:
+  - Name: Desktop
+    Value: 1932
+  Exists: 1
+--- !u!114 &7680649013268609485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/radio.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/radio.bank
+  Name: radio
+  StudioPath: bank:/radio
+  lastModified: 638149248962350018
+  FileSizes:
+  - Name: Desktop
+    Value: 15456
+  Exists: 1
+--- !u!114 &7756702860963008292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/car/car_wipers
+  m_EditorClassIdentifier: 
+  Path: event:/car/car_wipers
+  Guid:
+    Data1: -817360667
+    Data2: 1240239550
+    Data3: -255359831
+    Data4: 1959782486
+  Banks:
+  - {fileID: 841026312373545472}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8171637178370495814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/hud/sanity_breathing
+  m_EditorClassIdentifier: 
+  Path: event:/hud/sanity_breathing
+  Guid:
+    Data1: -1489191014
+    Data2: 1213111579
+    Data3: 474039474
+    Data4: -2087507962
+  Banks:
+  - {fileID: 7245280719547228877}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

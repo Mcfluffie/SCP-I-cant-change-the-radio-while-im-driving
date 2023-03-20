@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ef83801f-2c0a-47c9-ae3e-057a574d6991}">
+		<property name="assetPath">
+			<value>car_engine.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>38.545124999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{db03d2ad-ca17-49dd-8366-81fd9bda5852}</destination>
+		</relationship>
+	</object>
+</objects>
