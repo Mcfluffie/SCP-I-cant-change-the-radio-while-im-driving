@@ -18,12 +18,18 @@ public class ChangeVignette : MonoBehaviour
 
 
     public bool sanityDepreciating;
-    public float time;
+    public float vignetteLerpTime;
     public AnimationCurve curve;
 
     public float adjSanInc;
+    private float sanityTimer;
 
+    [SerializeField]
+    
+    private float sanityTimeOut = 1f;
     private float previousLevel;
+
+    private float i;
 
     private UnityEngine.Rendering.Universal.Vignette vignette;
     private UnityEngine.Rendering.Universal.ColorAdjustments colourAdj;
@@ -31,9 +37,12 @@ public class ChangeVignette : MonoBehaviour
 
     private InputDevice targetDevice;
 
-    [Range (0, 1f)]
-    public float sanityBar;
-    public float sanityLevel;
+    
+    private float sanityLevel;
+    private float interpolatedSanity;
+    private float startingIntensityVignette;
+
+    public float timeToHeal = 1f;
 
     // Update is called once per frame
     void Update()
@@ -57,38 +66,56 @@ public class ChangeVignette : MonoBehaviour
 
         if (primaryButtonValue || Input.GetKeyDown(KeyCode.Space))
         {
-
-            sanityBar += adjSanInc;
+            sanityTimer = sanityTimeOut;
+            sanityLevel += adjSanInc;
             
         }
 
-            
+
+      
+
+
+
 
         
+        interpolatedSanity += Mathf.Sign(sanityLevel - interpolatedSanity) * Mathf.Clamp(Time.deltaTime / vignetteLerpTime, 0f, Mathf.Abs(interpolatedSanity - sanityLevel));
         
 
-
-
-        //if (Mathf.Abs(sanityLevel - sanityBar) > Time.deltaTime / time)
-        //{
-            sanityLevel = Mathf.Sign(sanityBar - sanityLevel) * Mathf.Clamp(Time.deltaTime / time, 0f, Mathf.Abs(sanityLevel - sanityBar));
-        //}
-
-        if (previousLevel != sanityLevel)
+        if (previousLevel != interpolatedSanity)
         {
 
-            previousLevel = sanityLevel;
+            previousLevel = interpolatedSanity;
 
-            
-            float animVal = curve.Evaluate(sanityLevel);
+
+            float animVal = curve.Evaluate(interpolatedSanity);
             Shader.SetGlobalFloat(Shader.PropertyToID("_Bloodiness"), animVal);
             saturation = animVal * 100f;
 
-            vignette.intensity.Override(animVal / 1.5f);
+            // sets vignette intesnity to default 
+            vignette.intensity.Override(startingIntensityVignette + (animVal / 2f));
             colourAdj.saturation.Override(animVal);
 
 
+
         }
+
+
+
+        if (sanityTimer > 0)
+        {
+
+
+            sanityTimer -= Time.deltaTime;
+
+        }
+        else
+        {
+            // sanity bar decreases and is clamped
+            sanityLevel = Mathf.Clamp(sanityLevel - Time.deltaTime / timeToHeal, 0f, 1f);
+
+        }
+
+
 
         //if (sanityDepreciating)
         //{
@@ -102,12 +129,23 @@ public class ChangeVignette : MonoBehaviour
         //    sanityBar = Mathf.Clamp(sanityBar - Time.deltaTime / time, 0f, 1f);
         //}
 
-
-
-
-
     }
 
+
+
+
+    //IEnumerator SanityChange()
+    //{
+
+    //    // lerps the variables into their next position
+
+
+    //    float i = 0;
+
+
+
+
+    //}
 
 
     private void Awake()
@@ -129,6 +167,9 @@ public class ChangeVignette : MonoBehaviour
         // if volume profile is null try and find one via the unity engine code stated above
         // then attempt to create an exeption (throw exepetion) so it can find the correct variable required since URP doesn't like post processing
         if (!volumeProfile.TryGet(out colourAdj)) throw new System.NullReferenceException(nameof(colourAdj));
+
+
+        startingIntensityVignette = vignette.intensity.value;
 
     }
 
