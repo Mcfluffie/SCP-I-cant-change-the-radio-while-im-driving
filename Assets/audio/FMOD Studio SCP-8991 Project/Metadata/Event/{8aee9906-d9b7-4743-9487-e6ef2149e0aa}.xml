@@ -59,11 +59,21 @@
 	<object class="EventAutomatableProperties" id="{82dbb632-4f49-4d22-ad8a-04a2d7457f1f}" />
 	<object class="MarkerTrack" id="{d1de9cf4-416c-4ba7-a450-9692d1513413}" />
 	<object class="GroupTrack" id="{0149af0f-8a09-437f-89a2-187ea547ea88}">
+		<relationship name="modules">
+			<destination>{c081db83-efb1-4379-876e-b7c5cd94b763}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{1b483e72-2fe4-4ffc-8ef9-b592dc145452}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{0521b17a-458f-413e-bcd3-c06067621108}" />
+	<object class="Timeline" id="{0521b17a-458f-413e-bcd3-c06067621108}">
+		<relationship name="modules">
+			<destination>{c081db83-efb1-4379-876e-b7c5cd94b763}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{228730db-01f4-4716-85f8-fca25c4f6f9b}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{cafc9495-834f-4bbb-ad22-9d2b2242ae0a}">
 		<relationship name="effectChain">
 			<destination>{f8375d01-7733-43f8-b41d-fe9cfede3fd1}</destination>
@@ -81,6 +91,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{83fe8ae0-e961-4d32-b8b1-064e8278c569}" />
+	<object class="SingleSound" id="{c081db83-efb1-4379-876e-b7c5cd94b763}">
+		<property name="length">
+			<value>25.098041666666667</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{1f7b38da-9717-4f4f-909e-60af8c25bde3}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{1b483e72-2fe4-4ffc-8ef9-b592dc145452}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -95,9 +113,24 @@
 			<destination>{cafc9495-834f-4bbb-ad22-9d2b2242ae0a}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{228730db-01f4-4716-85f8-fca25c4f6f9b}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>25.098041666666667</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{0521b17a-458f-413e-bcd3-c06067621108}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{d1de9cf4-416c-4ba7-a450-9692d1513413}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{f8375d01-7733-43f8-b41d-fe9cfede3fd1}">
 		<relationship name="effects">
 			<destination>{a9b796b4-078f-48c1-b773-e8b4b1d5738f}</destination>
+			<destination>{0850d17a-60d4-4c40-82a9-dabcab7807c9}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{fc560e99-644c-41d3-9964-ba2d18117549}" />
@@ -109,5 +142,49 @@
 	</object>
 	<object class="MixerBusPanner" id="{38e24b10-767f-455f-8ad4-26b1212807aa}" />
 	<object class="MixerBusFader" id="{a9b796b4-078f-48c1-b773-e8b4b1d5738f}" />
+	<object class="PluginEffect" id="{0850d17a-60d4-4c40-82a9-dabcab7807c9}">
+		<relationship name="plugin">
+			<destination>{6c317e18-baaa-4178-883b-ac0ab777b2fa}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{0ef2e9cf-1931-4115-8777-8b1d370f7eab}" />
+	<object class="Plugin" id="{6c317e18-baaa-4178-883b-ac0ab777b2fa}">
+		<property name="identifier">
+			<value>Resonance Audio Soundfield</value>
+		</property>
+		<relationship name="pluginParameters">
+			<destination>{8b341364-900f-40df-8f5b-d3cdf0a668a1}</destination>
+			<destination>{543dfb53-6718-4827-b520-bc6ebdcf0183}</destination>
+			<destination>{76d221ee-d5d8-4c96-b28f-2e2192d1b9ec}</destination>
+		</relationship>
+	</object>
+	<object class="FloatPluginParameter" id="{8b341364-900f-40df-8f5b-d3cdf0a668a1}">
+		<property name="name">
+			<value>Gain</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+		<property name="curve">
+			<value>{(0.000000,-80.000000)(1.000000,24.000000)}</value>
+		</property>
+	</object>
+	<object class="DataPluginParameter" id="{543dfb53-6718-4827-b520-bc6ebdcf0183}">
+		<property name="name">
+			<value>3D Attributes</value>
+		</property>
+		<property name="value" />
+		<property name="dataType">
+			<value>-2</value>
+		</property>
+	</object>
+	<object class="DataPluginParameter" id="{76d221ee-d5d8-4c96-b28f-2e2192d1b9ec}">
+		<property name="name">
+			<value>Overall Gain</value>
+		</property>
+		<property name="value" />
+		<property name="dataType">
+			<value>-1</value>
+		</property>
+	</object>
 </objects>

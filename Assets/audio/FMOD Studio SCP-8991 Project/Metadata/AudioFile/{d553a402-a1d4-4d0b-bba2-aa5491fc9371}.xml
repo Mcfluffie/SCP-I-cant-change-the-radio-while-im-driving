@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d553a402-a1d4-4d0b-bba2-aa5491fc9371}">
+		<property name="assetPath">
+			<value>car_lever13.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.17152083333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{db03d2ad-ca17-49dd-8366-81fd9bda5852}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7697e669-b306-46c1-8382-e45831fb2b7b}">
+		<property name="assetPath">
+			<value>car_wipers.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>25.945958333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{db03d2ad-ca17-49dd-8366-81fd9bda5852}</destination>
+		</relationship>
+	</object>
+</objects>

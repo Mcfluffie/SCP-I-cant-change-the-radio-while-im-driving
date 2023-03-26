@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000016F910D7288 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000023538EAE198 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -21,12 +21,28 @@
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Listener'
@@ -34,11 +50,399 @@
 [WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Listener'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Soundfield'
+[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000023539832D48, queue head = 000002351795DBA8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000023539832D48
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1845408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000023402F6A160
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambience_rain', format=5, channels=1, frequency=48000, lengthbytes=190368, lengthpcm=1204706, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.176972.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000023539832D48
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Soundfield'
+[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000023538AE3048, queue head = 000002351795DBA8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000023538AE3048
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1845408
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11840
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000023402F69B20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ambience_rain', format=5, channels=1, frequency=48000, lengthbytes=190368, lengthpcm=1204706, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.176972.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000023538AE3048
+[LOG] SoundI::release                          : ambience_rain (0000023539832D48)
+[LOG] SoundI::release                          :     ambience_rain (00000235397D4FA8)
+[LOG] SoundI::release                          :     ambience_rain (0000023538ADC448)
+[LOG] SoundI::release                          : ambience_rain (0000023538AE3048)
+[LOG] SoundI::release                          :     ambience_rain (00000235397D4AC8)
+[LOG] SoundI::release                          :     ambience_rain (0000023538AE0618)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Listener'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
+[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button6', format=5, channels=1, frequency=48000, lengthbytes=3232, lengthpcm=17323, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.786152.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button1', format=5, channels=1, frequency=48000, lengthbytes=3680, lengthpcm=20000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.584808.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button9', format=5, channels=1, frequency=48000, lengthbytes=1504, lengthpcm=7401, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.497635.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button13', format=5, channels=1, frequency=48000, lengthbytes=2752, lengthpcm=14918, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.891251.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button12', format=5, channels=1, frequency=48000, lengthbytes=2528, lengthpcm=13405, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.578980.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button10', format=5, channels=1, frequency=48000, lengthbytes=1568, lengthpcm=7407, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.604401.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button8', format=5, channels=1, frequency=48000, lengthbytes=1600, lengthpcm=7345, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.505127.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button3', format=5, channels=1, frequency=48000, lengthbytes=3200, lengthpcm=17842, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.841395.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button15', format=5, channels=1, frequency=48000, lengthbytes=1952, lengthpcm=9685, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.519036.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button5', format=5, channels=1, frequency=48000, lengthbytes=2720, lengthpcm=14599, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.749894.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button7', format=5, channels=1, frequency=48000, lengthbytes=3008, lengthpcm=15605, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.792875.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button4', format=5, channels=1, frequency=48000, lengthbytes=2784, lengthpcm=14813, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.794328.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button14', format=5, channels=1, frequency=48000, lengthbytes=1920, lengthpcm=8931, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.459437.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button2', format=5, channels=1, frequency=48000, lengthbytes=3104, lengthpcm=16599, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.547799.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 232480
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9760
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009EA383F2A8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFE0BBA3490
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFE0BBA3450
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFE0BBA3570
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFE0BBA3630
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002355ECD4998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='radio_button11', format=5, channels=1, frequency=48000, lengthbytes=2112, lengthpcm=10675, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.661533.
+[LOG] SoundI::release                          :  (000002355ECD5DD8)
+[LOG] SoundI::release                          :     radio_button1 (00000235397D4C68)
+[LOG] SoundI::release                          :  (000002355EF57E48)
+[LOG] SoundI::release                          :     radio_button2 (000002355EF56968)
+[LOG] SoundI::release                          :  (000002355ECD56A8)
+[LOG] SoundI::release                          :     radio_button3 (000002355EF55958)
+[LOG] SoundI::release                          :  (000002355EF57438)
+[LOG] SoundI::release                          :     radio_button4 (000002355EF56488)
+[LOG] SoundI::release                          :  (000002355ECD5258)
+[LOG] SoundI::release                          :     radio_button5 (000002355EF55C98)
+[LOG] SoundI::release                          :  (00000233A0F944F8)
+[LOG] SoundI::release                          :     radio_button6 (00000235397D4AC8)
+[LOG] SoundI::release                          :  (000002355ECD5988)
+[LOG] SoundI::release                          :     radio_button7 (000002355EF55138)
+[LOG] SoundI::release                          :  (000002355ECD50E8)
+[LOG] SoundI::release                          :     radio_button8 (000002355EF557B8)
+[LOG] SoundI::release                          :  (000002355ECD5AF8)
+[LOG] SoundI::release                          :     radio_button9 (000002355EF54AE8)
+[LOG] SoundI::release                          :  (000002355ECD53C8)
+[LOG] SoundI::release                          :     radio_button10 (000002355EF54C88)
+[LOG] SoundI::release                          :  (000002355EF579F8)
+[LOG] SoundI::release                          :     radio_button11 (000002355EF56CA8)
+[LOG] SoundI::release                          :  (000002355ECD5538)
+[LOG] SoundI::release                          :     radio_button12 (000002355EF54948)
+[LOG] SoundI::release                          :  (000002355ECD5C68)
+[LOG] SoundI::release                          :     radio_button13 (000002355EF542C8)
+[LOG] SoundI::release                          :  (000002355EF57888)
+[LOG] SoundI::release                          :     radio_button14 (000002355EF56628)
+[LOG] SoundI::release                          :  (000002355ECD5818)
+[LOG] SoundI::release                          :     radio_button15 (000002355EF552D8)

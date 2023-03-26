@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{7d01bc27-ae9e-4004-a471-7fe26afa4118}">
 		<property name="name">
-			<value>channel_ghost</value>
+			<value>channel_possessed</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>

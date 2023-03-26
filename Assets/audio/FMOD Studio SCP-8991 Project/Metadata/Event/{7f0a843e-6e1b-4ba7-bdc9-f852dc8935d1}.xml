@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{7f0a843e-6e1b-4ba7-bdc9-f852dc8935d1}">
 		<property name="name">
-			<value>car_winder</value>
+			<value>car_winder_up</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{e5fc4268-fe81-42f2-931e-b84cf47a9075}</destination>
+			<destination>{695ed632-cee7-403e-b0f8-ec3484008ca6}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{87c08750-697b-4278-974c-684c6b6596d4}</destination>
@@ -59,11 +59,18 @@
 	<object class="EventAutomatableProperties" id="{8ac15d19-a144-4013-bdf6-0d236924788f}" />
 	<object class="MarkerTrack" id="{60a97a60-bbd5-46f7-a207-87725913a2ef}" />
 	<object class="GroupTrack" id="{eddc6013-0e32-4152-b4d2-86c082ad6a9e}">
+		<relationship name="modules">
+			<destination>{a5580925-89ed-419f-a14e-70c3694c661f}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a157e1f1-d66f-4989-9d0f-bd9066e9b803}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{33c5b552-ec7a-428c-b7ec-016ea4a12499}" />
+	<object class="Timeline" id="{33c5b552-ec7a-428c-b7ec-016ea4a12499}">
+		<relationship name="modules">
+			<destination>{a5580925-89ed-419f-a14e-70c3694c661f}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{9131d983-f62d-4543-ad7c-c422d4552078}">
 		<relationship name="effectChain">
 			<destination>{5f6adde9-e731-4a9e-8c03-0977063971b4}</destination>
@@ -81,6 +88,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{0f833094-3651-4d3e-afa4-5bbc4c2e953a}" />
+	<object class="SingleSound" id="{a5580925-89ed-419f-a14e-70c3694c661f}">
+		<property name="length">
+			<value>4.4118124999999999</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{6909bd40-585a-438c-b54c-6bd197b9e519}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{a157e1f1-d66f-4989-9d0f-bd9066e9b803}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -208,7 +223,6 @@
 		<property name="name">
 			<value>Attenuation Ran</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-6</value>
 		</property>
@@ -217,7 +231,6 @@
 		<property name="name">
 			<value>3D Attributes</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-2</value>
 		</property>
@@ -253,7 +266,6 @@
 		<property name="name">
 			<value>Overall Gain</value>
 		</property>
-		<property name="value" />
 		<property name="dataType">
 			<value>-1</value>
 		</property>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1c240c8c-0658-4b94-82ff-e7e49e8b4a2a}">
+		<property name="assetPath">
+			<value>radio_button3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.37170833333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{db03d2ad-ca17-49dd-8366-81fd9bda5852}</destination>
+		</relationship>
+	</object>
+</objects>
