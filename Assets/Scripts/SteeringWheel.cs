@@ -9,6 +9,15 @@ public class SteeringWheel : XRBaseInteractable
     public UnityEvent<float> OnWheelRotated;
 
     private float currentAngle = 0.0f;
+    public float steeringsesns = 0.05f;
+ 
+
+
+
+    public void Update()
+    {
+       
+    }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
@@ -76,6 +85,8 @@ public class SteeringWheel : XRBaseInteractable
     private float FindRotationSensitivity()
     {
         // Use a smaller rotation sensitivity with two hands
-        return 0.05f / interactorsSelecting.Count;
+        return steeringsesns / interactorsSelecting.Count;
     }
+
+  
 }

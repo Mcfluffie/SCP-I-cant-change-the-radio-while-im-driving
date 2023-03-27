@@ -14,6 +14,7 @@ public class Fowardtest : MonoBehaviour
 
     private Rigidbody rb;
     private Quaternion targetRotation; // The target rotation of the car
+    public float maxMagnitude = 2.0f; // maximum magnitude for carDirection
 
     private void Start()
     {
@@ -43,7 +44,7 @@ public class Fowardtest : MonoBehaviour
         rb.AddForce(Vector3.forward * speed * Time.deltaTime);
 
         // Calculate the direction of the car based on the rotation of the steering wheel
-        float maxMagnitude = 2.0f; // maximum magnitude for carDirection
+        
         Vector3 carDirection = Quaternion.Euler(0, steeringWheel.rotation.eulerAngles.y, 0) * Vector3.forward;
         carDirection = Vector3.ClampMagnitude(carDirection, maxMagnitude);
 
@@ -55,7 +56,7 @@ public class Fowardtest : MonoBehaviour
         targetRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, steeringWheel.rotation.eulerAngles.y + steeringAngle, transform.rotation.eulerAngles.z);
 
         // Rotate the car towards the target rotation using lerp
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed + Time.deltaTime);
     }
 }
 

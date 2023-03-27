@@ -6,25 +6,21 @@ public class Window : MonoBehaviour
 {
     public GameObject window;
     public GameObject ghosthand;
-    public Transform pos; 
-    public float targetYPosition; // the target y position for the window
+    public Animator anime;
 
-    private Vector3 initialPosition; // the initial position of the window
 
-    private void Start()
+    public void Start()
     {
-        initialPosition = window.transform.position; // store the initial position of the window
-        
+        anime.Play("windowidel");
     }
+
 
     public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("RadioTrigger"))
         {
-            // Move the window down to the target position
-            Vector3 newPos = window.transform.position;
-            newPos.y = targetYPosition;
-            window.transform.position = newPos;
+            anime.Play("window");
+            ghosthand.SetActive(false);
         }
     }
 
@@ -32,9 +28,8 @@ public class Window : MonoBehaviour
     {
         if (other.CompareTag("RadioTrigger"))
         {
-            // Move the window back to its initial position
-            window.transform.position = pos.position;
-            ghosthand.SetActive(false);
+            anime.Play("windowidel");
         }
     }
+
 }
