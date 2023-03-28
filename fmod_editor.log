@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000016F22B90AC8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000021AEBA97EB8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,165 +16,6 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Listener'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Listener'
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
-[LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000016DA9039478, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA9039478
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 464224
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 12480
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000016DA9D87880
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 11000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='car_engine', format=5, channels=1, frequency=48000, lengthbytes=160032, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199264.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA9039478
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000016DA903D9A8, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA903D9A8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 464224
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 12480
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000016F700CD910
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 11000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='car_engine', format=5, channels=1, frequency=48000, lengthbytes=160032, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199264.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA903D9A8
-[LOG] SoundI::release                          : car_engine (0000016DA9039478)
-[LOG] SoundI::release                          :     car_engine (0000016DA97E7308)
-[LOG] SoundI::release                          :     car_engine (0000016DA903B488)
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000016DA903DB58, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA903DB58
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 464224
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 12480
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000016F700CD690
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 11000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='car_engine', format=5, channels=1, frequency=48000, lengthbytes=160032, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199264.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA903DB58
-[LOG] SoundI::release                          : car_engine (0000016DA903D9A8)
-[LOG] SoundI::release                          :     car_engine (0000016DA97E74A8)
-[LOG] SoundI::release                          :     car_engine (0000016DA903B7E8)
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Source'
-[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000016DA9039CE8, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA9039CE8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 464224
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 12480
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000016F700CE810
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 11000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='car_engine', format=5, channels=1, frequency=48000, lengthbytes=160032, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199264.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA9039CE8
-[LOG] SoundI::release                          : car_engine (0000016DA903DB58)
-[LOG] SoundI::release                          :     car_engine (0000016DA97EA568)
-[LOG] SoundI::release                          :     car_engine (0000016DA903C208)
-[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000016DA903A048, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA903A048
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 464224
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 12480
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000016F700CD190
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 11000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='car_engine', format=5, channels=1, frequency=48000, lengthbytes=160032, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199264.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA903A048
-[LOG] SoundI::release                          : car_engine (0000016DA9039CE8)
-[LOG] SoundI::release                          :     car_engine (0000016DA97E74A8)
-[LOG] SoundI::release                          :     car_engine (0000016DA9038038)
-[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000016DA903B488, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA903B488
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 464224
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 12480
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000016F700CDA50
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 11000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='car_engine', format=5, channels=1, frequency=48000, lengthbytes=160032, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.199264.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA903B488
-[LOG] SoundI::release                          : car_engine (0000016DA903A048)
-[LOG] SoundI::release                          :     car_engine (0000016DA97E5288)
-[LOG] SoundI::release                          :     car_engine (0000016DA903B7E8)
-[LOG] SoundI::release                          : car_engine (0000016DA903B488)
-[LOG] SoundI::release                          :     car_engine (0000016DA97E40A8)
-[LOG] SoundI::release                          :     car_engine (0000016DA903BB48)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Soundfield'
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
@@ -214,65 +55,6 @@
 [LOG] PluginEffectModel::init                  : Missing DSP plugin 'Resonance Audio Source'
 [LOG] PostLoad::initPluginEffects              : Creating stub DSP plugin model and continuing.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Soundfield'
-[WRN] EffectInstanceFactory::create            : Creating stub DSP for plugin 'Resonance Audio Soundfield'
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 1845408
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 11840
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000002413C1F248
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF86D623490
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF86D623450
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF86D623570
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF86D623630
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000016F229BEB68
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='trees_rustling', format=5, channels=2, frequency=48000, lengthbytes=105440, lengthpcm=391680, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.034668.
-[LOG] SystemI::createSound                     : filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000016DA9038038, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA9038038
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSound                     :     filename = Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1845408
-[LOG] AsyncThread::add                         :     add sound to async queue : soundi = 0000016DA9039E98, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11840
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000016F700CE090
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_inphase', format=5, channels=2, frequency=48000, lengthbytes=777632, lengthpcm=4609152, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.260559.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA9038038
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA9039E98
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1845408
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 11840
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000016F700CD550
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='wind_interior_inphase', format=5, channels=2, frequency=48000, lengthbytes=769888, lengthpcm=4629888, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.321899.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA9039E98
-[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0000016DA903ADC8, queue head = 0000016E7756F4A8, queue count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000016DA903ADC8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000016DA903ADC8
-[LOG] SoundI::release                          : wind_interior_inphase (0000016DA9039E98)
-[LOG] SoundI::release                          :     wind_interior_inphase (0000016DA97EA568)
-[LOG] SoundI::release                          :     wind_interior_inphase (0000016DA903ADC8)
-[LOG] SoundI::release                          : wind_inphase (0000016DA9038038)
-[LOG] SoundI::release                          :     wind_inphase (0000016DA97E7CC8)
-[LOG] SoundI::release                          :     wind_inphase (0000016DA903A8B8)
-[LOG] SoundI::release                          :  (0000016F25693578)
-[LOG] SoundI::release                          :     trees_rustling (0000016DA97E67A8)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -280,5 +62,3 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.

@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ghosts.bank
   Name: ghosts
   StudioPath: bank:/ghosts
-  lastModified: 638156053705928032
+  lastModified: 638156118164221132
   FileSizes:
   - Name: Desktop
     Value: 27552
@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ui.bank
   Name: ui
   StudioPath: bank:/ui
-  lastModified: 638156053705958054
+  lastModified: 638150018545769603
   FileSizes:
   - Name: Desktop
     Value: 2494
@@ -244,7 +244,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638156053705948049
+  lastModified: 638156118164231137
   FileSizes:
   - Name: Desktop
     Value: 1178
@@ -291,7 +291,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638156053705988109
+  lastModified: 638156118164451131
   FileSizes:
   - Name: Desktop
     Value: 1857248
@@ -426,7 +426,7 @@ MonoBehaviour:
   - {fileID: -4612602628203884740}
   StringsBanks:
   - {fileID: 7423751942248493530}
-  cacheTime: 638156053705988109
+  cacheTime: 638156118164451131
   cacheVersion: 131601
 --- !u!114 &355588820558451858
 MonoBehaviour:
@@ -470,7 +470,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank
   Name: car
   StudioPath: bank:/car
-  lastModified: 638156053705938035
+  lastModified: 638156118164271137
   FileSizes:
   - Name: Desktop
     Value: 476704
@@ -706,7 +706,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/hud.bank
   Name: hud
   StudioPath: bank:/hud
-  lastModified: 638156053705928032
+  lastModified: 638150018545669603
   FileSizes:
   - Name: Desktop
     Value: 2494
@@ -726,7 +726,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638156053705948049
+  lastModified: 638156118164241136
   FileSizes:
   - Name: Desktop
     Value: 2010
@@ -746,7 +746,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/radio.bank
   Name: radio
   StudioPath: bank:/radio
-  lastModified: 638156053705968060
+  lastModified: 638156118164281132
   FileSizes:
   - Name: Desktop
     Value: 242240
